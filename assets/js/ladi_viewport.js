@@ -13,7 +13,10 @@ window.ladi_viewport = function (b) {
         var f = 420;
         var g = "";
         if (!d) {
-          g = "width=" + e + ",user-scalable=no,initial-scale=1.0";
+          g =
+            "width=" +
+            e +
+            ",user-scalable=no,initial-scale=1.0,viewport-fit=cover";
         } else {
           var h = 1;
           var i = f;
@@ -28,7 +31,8 @@ window.ladi_viewport = function (b) {
             ",minimum-scale=" +
             h +
             ",maximum-scale=" +
-            h;
+            h +
+            ",viewport-fit=cover";
         }
         var j = a.getElementById("viewport");
         if (!j) {
@@ -39,7 +43,25 @@ window.ladi_viewport = function (b) {
         }
         j.setAttribute("content", g);
       };
+      window.ladi_set_narrow_vars = function () {
+        var dw = window.innerWidth || 420;
+        var el = document.documentElement;
+        el.style.setProperty("--device-width-px", dw + "px");
+        var frac = Math.min(1, Math.max(360 / 440, dw / 440));
+        el.style.setProperty("--narrow-frac", String(frac));
+      };
       window.ladi_viewport();
+      window.ladi_set_narrow_vars();
+      window.addEventListener("resize", function () {
+        window.ladi_viewport();
+        window.ladi_set_narrow_vars();
+      });
+      window.addEventListener("orientationchange", function () {
+        setTimeout(function () {
+          window.ladi_viewport();
+          window.ladi_set_narrow_vars();
+        }, 200);
+      });
       window.ladi_fbq_data = [];
       window.ladi_fbq = function () {
         window.ladi_fbq_data.push(arguments);
