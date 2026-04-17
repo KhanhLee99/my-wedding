@@ -1,4 +1,4 @@
-const musicList = ["https://camcui.vn/bai103.mp3"];
+const musicList = ["musics/bai50.mp3"];
 
       let index = 0;
       let audio = new Audio(musicList[index]);
