@@ -2024,7 +2024,7 @@ body {
 #HEADLINE80 > .ladi-headline:hover,
 #BOX11 > .ladi-box:hover,
 #HEADLINE40 > .ladi-headline:hover,
-#HEADLINE41 > .ladi-headline:hover,
+#HEADLINE106 > .ladi-headline:hover,
 #HEADLINE42 > .ladi-headline:hover,
 #HEADLINE43 > .ladi-headline:hover,
 #HEADLINE44 > .ladi-headline:hover,
@@ -2060,7 +2060,8 @@ body {
 #HEADLINE74 > .ladi-headline:hover,
 #HEADLINE75 > .ladi-headline:hover,
 #HEADLINE76 > .ladi-headline:hover,
-#HEADLINE77 > .ladi-headline:hover,
+#HEADLINE107 > .ladi-headline:hover,
+#HEADLINE108 > .ladi-headline:hover,
 #IMAGE35:hover > .ladi-image,
 #HEADLINE78 > .ladi-headline:hover,
 #HEADLINE81 > .ladi-headline:hover,
@@ -3071,7 +3072,9 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-#HEADLINE41,
+#HEADLINE106,
+#HEADLINE107,
+#HEADLINE108,
 #HEADLINE42,
 #HEADLINE43,
 #HEADLINE44,
@@ -3099,15 +3102,12 @@ body {
 #HEADLINE73,
 #HEADLINE74,
 #HEADLINE75,
-#HEADLINE76,
-#HEADLINE77 {
+#HEADLINE76 {
   width: 29px;
 }
-#HEADLINE41 {
-  top: 121.505px;
-  left: 117.332px;
-}
-#HEADLINE41 > .ladi-headline,
+#HEADLINE106 > .ladi-headline,
+#HEADLINE107 > .ladi-headline,
+#HEADLINE108 > .ladi-headline,
 #HEADLINE42 > .ladi-headline,
 #HEADLINE43 > .ladi-headline,
 #HEADLINE44 > .ladi-headline,
@@ -3135,8 +3135,7 @@ body {
 #HEADLINE73 > .ladi-headline,
 #HEADLINE74 > .ladi-headline,
 #HEADLINE75 > .ladi-headline,
-#HEADLINE76 > .ladi-headline,
-#HEADLINE77 > .ladi-headline {
+#HEADLINE76 > .ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
   font-size: 13px;
   line-height: 1.6;
@@ -3306,8 +3305,16 @@ body {
   top: 121.505px;
   left: 170.083px;
 }
-#HEADLINE77 {
-  top: 121.509px;
+#HEADLINE106 {
+  top: 272.505px;
+  left: 223.112px;
+}
+#HEADLINE107 {
+  top: 272.505px;
+  left: 275.668px;
+}
+#HEADLINE108 {
+  top: 272.505px;
   left: 328.221px;
 }
 #IMAGE34,
@@ -3317,7 +3324,7 @@ body {
 }
 #IMAGE34 {
   top: 222.53px;
-  left: 270.048px;
+  left: 323.048px;
 }
 #IMAGE34 > .ladi-image > .ladi-image-background {
   background-image: url("https://w.ladicdn.com/s350x350/6322a62f2dad980013bb5005/thiep-thanh-dat-element_0008_26-20251010165345-3-wxc.png");
