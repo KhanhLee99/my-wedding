@@ -610,12 +610,12 @@ body {
 }
 @font-face {
   font-family: "TESQSSRUdVTEFSLlRURg";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/lora-regular-20250420044709-6d4hn.ttf")
+  src: url("https://khanhlee99.github.io/my-wedding/fonts/lora-regular-20250420044709-6d4hn.ttf")
     format("truetype");
 }
 @font-face {
   font-family: "VVZOSGhVGFMSdGY";
-  src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/uvnhoatay1-20250703082157-fl9kv.ttf")
+  src: url("https://khanhlee99.github.io/my-wedding/fonts/uvnhoatay1-20250703082157-fl9kv.ttf")
     format("truetype");
 }
 body {
@@ -654,7 +654,7 @@ body {
 #IMAGE8 > .ladi-image > .ladi-image-background {
   width: 420px;
   height: 634.5px;
-  background-image: url("https://w.ladicdn.com/s750x950/6322a62f2dad980013bb5005/icon-thiep-huyenpsd_0000_clear-white-plaster-texture-pattern-copy-14-20250703084107-2wpug.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/background2.png");
 }
 #IMAGE11,
 #IMAGE11 > .ladi-image > .ladi-image-background {
@@ -662,7 +662,7 @@ body {
   height: 378.882px;
 }
 #IMAGE11 > .ladi-image > .ladi-image-background {
-  background-image: url("https://w.ladicdn.com/s700x700/6322a62f2dad980013bb5005/fdf-20250420031550-qdinw.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/background3.png");
 }
 #HEADLINE3 {
   width: 400px;
@@ -714,7 +714,7 @@ body {
   left: 46.2553px;
 }
 #IMAGE4 > .ladi-image > .ladi-image-background {
-  background-image: url("https://w.ladicdn.com/s650x750/6322a62f2dad980013bb5005/untitled-1_0001_layer-1-20250801095835-raafo.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/letter0.png");
 }
 #GROUP4 {
   width: 279.189px;
@@ -734,7 +734,7 @@ body {
   height: 255.668px;
 }
 #IMAGE6 > .ladi-image > .ladi-image-background {
-  background-image: url("https://w.ladicdn.com/s600x600/6322a62f2dad980013bb5005/thiep-minh-ha_0035_untitled-1-copy-20250714051635-brlvd.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/background4.png");
 }
 #BOX1 {
   width: 256.628px;
@@ -744,7 +744,7 @@ body {
 }
 #BOX1 > .ladi-box {
   border-radius: 0px;
-  background-image: url("../../../wedding_images/rung/TMN_0969.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0969.jpg");
   background-size: cover;
   background-origin: content-box;
   background-position: center top;
@@ -767,7 +767,7 @@ body {
   left: -41px;
 }
 #IMAGE12 > .ladi-image > .ladi-image-background {
-  background-image: url("../../../icon/background1.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/background1.png");
 }
 #IMAGE5,
 #IMAGE5 > .ladi-image > .ladi-image-background {
@@ -779,7 +779,7 @@ body {
   left: 49.2553px;
 }
 #IMAGE5 > .ladi-image > .ladi-image-background {
-  background-image: url("../../../icon/letter1.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/letter1.png");
 }
 #IMAGE9,
 #IMAGE9 > .ladi-image > .ladi-image-background {
@@ -791,7 +791,7 @@ body {
   left: 181.263px;
 }
 #IMAGE9 > .ladi-image > .ladi-image-background {
-  background-image: url("../../../icon/coin1.png");
+  background-image: url("https://khanhlee99.github.io/my-wedding/icon/coin1.png");
 }
 #IMAGE9.ladi-animation > .ladi-image {
   animation-name: pulse;
