@@ -3689,6 +3689,12 @@ body {
 #GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="5"] {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_1020.jpg");
 }
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4196.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4196.jpg");
+}
 #SECTION11 {
   height: 625.7px;
 }
@@ -4100,7 +4106,7 @@ body {
   left: 31.368px;
 }
 #BOX18 > .ladi-box {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0708.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4301.jpg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 50%;
