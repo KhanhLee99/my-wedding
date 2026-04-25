@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin RSVP</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        background: #f7f7fb;
+        color: #1b1b1f;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 32px auto;
+        padding: 0 16px;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 28px;
+      }
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin: 16px 0 18px;
+      }
+      input[type="search"] {
+        width: 320px;
+        max-width: 100%;
+        border: 1px solid #d8d8e0;
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+      button {
+        border: 0;
+        border-radius: 8px;
+        padding: 10px 14px;
+        background: #1a73e8;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      button.secondary {
+        background: #5f6368;
+      }
+      .meta {
+        color: #5f6368;
+        font-size: 14px;
+      }
+      .table-wrap {
+        overflow: auto;
+        border: 1px solid #e4e5ee;
+        border-radius: 10px;
+        background: white;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #f0f1f7;
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+      th {
+        position: sticky;
+        top: 0;
+        background: #fafbff;
+        z-index: 1;
+      }
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        font-size: 12px;
+      }
+      .empty {
+        padding: 20px;
+        color: #5f6368;
+      }
+      .error {
+        color: #c5221f;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>RSVP Submissions</h1>
+      <div class="meta" id="status">Dang tai du lieu...</div>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Tim theo ten / loi nhan / trang thai..." />
+        <button id="reloadBtn">Tai lai</button>
+        <button id="csvBtn" class="secondary">Tai CSV</button>
+      </div>
+      <div class="table-wrap">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Ten</th>
+              <th>Trang thai</th>
+              <th>So nguoi</th>
+              <th>Loi nhan</th>
+              <th>Thoi gian</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <div id="empty" class="empty" hidden>Chua co du lieu.</div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        getDocs,
+        orderBy,
+        query,
+      } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAFNXYxxWRm23dQhfpzrYgbBvxxY8OXffk",
+        authDomain: "my-wedding-a8459.firebaseapp.com",
+        projectId: "my-wedding-a8459",
+        storageBucket: "my-wedding-a8459.firebasestorage.app",
+        messagingSenderId: "762929240192",
+        appId: "1:762929240192:web:18ab5d8d4dde0bc6c82e65",
+        measurementId: "G-P8X8T3NNNY",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      const statusEl = document.getElementById("status");
+      const tbody = document.getElementById("tbody");
+      const emptyEl = document.getElementById("empty");
+      const searchEl = document.getElementById("search");
+      const reloadBtn = document.getElementById("reloadBtn");
+      const csvBtn = document.getElementById("csvBtn");
+
+      let allRows = [];
+
+      function formatTime(row) {
+        const ts = row.submitted_at;
+        if (ts && typeof ts.toDate === "function") {
+          return ts.toDate().toLocaleString("vi-VN");
+        }
+        return row.submitted_at_client || "";
+      }
+
+      function escapeCsv(value) {
+        const str = String(value ?? "");
+        if (str.includes(",") || str.includes('"') || str.includes("\n")) {
+          return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+      }
+
+      function downloadCsv(rows) {
+        const headers = ["doc_id", "name", "attendance", "guests_count", "message", "submitted_at", "submitted_at_client"];
+        const lines = [headers.join(",")];
+        rows.forEach((r) => {
+          const row = [
+            r.id,
+            r.name || "",
+            r.attendance || "",
+            r.guests_count || "",
+            r.message || "",
+            formatTime(r),
+            r.submitted_at_client || "",
+          ];
+          lines.push(row.map(escapeCsv).join(","));
+        });
+        const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `rsvp-submissions-${new Date().toISOString().slice(0, 19)}.csv`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+
+      function renderTable(rows) {
+        tbody.innerHTML = "";
+        if (!rows.length) {
+          emptyEl.hidden = false;
+          return;
+        }
+        emptyEl.hidden = true;
+
+        rows.forEach((row) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${row.name || ""}</td>
+            <td>${row.attendance || ""}</td>
+            <td>${row.guests_count || ""}</td>
+            <td>${row.message || ""}</td>
+            <td>${formatTime(row)}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+
+      function applyFilter() {
+        const keyword = searchEl.value.trim().toLowerCase();
+        if (!keyword) {
+          renderTable(allRows);
+          statusEl.textContent = `Tong: ${allRows.length} phan hoi`;
+          return;
+        }
+        const filtered = allRows.filter((r) =>
+          [r.name, r.message, r.attendance, r.guests_count, r.id].join(" ").toLowerCase().includes(keyword)
+        );
+        renderTable(filtered);
+        statusEl.textContent = `Hien thi ${filtered.length}/${allRows.length} phan hoi`;
+      }
+
+      async function loadData() {
+        statusEl.textContent = "Dang tai du lieu...";
+        statusEl.classList.remove("error");
+        try {
+          const q = query(collection(db, "rsvp_submissions"), orderBy("submitted_at_client", "desc"));
+          const snap = await getDocs(q);
+          allRows = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+          applyFilter();
+        } catch (error) {
+          console.error(error);
+          statusEl.textContent = "Khong doc duoc du lieu. Kiem tra Firestore Rules (read permission).";
+          statusEl.classList.add("error");
+          allRows = [];
+          renderTable([]);
+        }
+      }
+
+      reloadBtn.addEventListener("click", loadData);
+      searchEl.addEventListener("input", applyFilter);
+      csvBtn.addEventListener("click", () => downloadCsv(allRows));
+
+      loadData();
+    </script>
+  </body>
+</html>
