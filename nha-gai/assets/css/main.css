@@ -3653,6 +3653,36 @@ body {
   height: 80px;
   margin-right: 10px;
 }
+#GALLERY2 > .ladi-gallery {
+  contain: layout paint;
+}
+#GALLERY2 > .ladi-gallery > .ladi-gallery-control > .ladi-gallery-control-box {
+  will-change: left;
+  transform: translateZ(0);
+}
+#GALLERY2
+  > .ladi-gallery
+  > .ladi-gallery-control
+  > .ladi-gallery-control-box
+  > .ladi-gallery-control-item {
+  float: none;
+  filter: none;
+  opacity: 0.85;
+  transition: opacity 150ms ease-in-out;
+  will-change: opacity;
+}
+#GALLERY2
+  > .ladi-gallery
+  > .ladi-gallery-control
+  > .ladi-gallery-control-box
+  > .ladi-gallery-control-item:hover,
+#GALLERY2
+  > .ladi-gallery
+  > .ladi-gallery-control
+  > .ladi-gallery-control-box
+  > .ladi-gallery-control-item.selected {
+  opacity: 1;
+}
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/Gemini_Generated_Image_wqcv5twqcv5twqcv.png");
 }
