@@ -980,7 +980,7 @@
                         <input
                           autocomplete="off"
                           tabindex="6"
-                          name=""
+                          name="guests_count"
                           class="ladi-form-control"
                           type="text"
                           placeholder="Số lượng tham dự cùng?"
@@ -1674,6 +1674,54 @@
       defer=""
       src="assets/js/ladipage.formdata.min.js"
     ></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        serverTimestamp,
+      } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
+      console.log("111");
+      const firebaseConfig = {
+        apiKey: "AIzaSyAFNXYxxWRm23dQhfpzrYgbBvxxY8OXffk",
+        authDomain: "my-wedding-a8459.firebaseapp.com",
+        projectId: "my-wedding-a8459",
+        storageBucket: "my-wedding-a8459.firebasestorage.app",
+        messagingSenderId: "762929240192",
+        appId: "1:762929240192:web:18ab5d8d4dde0bc6c82e65",
+        measurementId: "G-P8X8T3NNNY",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      const form = document.querySelector("#FORM2 form");
+
+      if (!form) {
+        console.warn("FORM2 not found");
+      } else {
+        form.addEventListener(
+          "submit",
+          async function () {
+            const data = Object.fromEntries(new FormData(form).entries());
+            try {
+              await addDoc(collection(db, "rsvp_submissions"), {
+                name: data.name || "",
+                message: data.message || "",
+                attendance: data.form_item7 || "",
+                guests_count: data.guests_count || "",
+                submitted_at: serverTimestamp(),
+                submitted_at_client: new Date().toISOString(),
+              });
+            } catch (error) {
+              console.error("Save RSVP failed:", error);
+            }
+          },
+          true
+        );
+      }
+    </script>
     <div id="2fa-auth-scan-qr">
       <template shadowrootmode="open"
         ><div
