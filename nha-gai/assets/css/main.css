@@ -2445,7 +2445,7 @@ body {
 #HEADLINE6 > .ladi-headline,
 #HEADLINE8 > .ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
-  font-size: 14px;
+  font-size: 16.75px;
   font-weight: bold;
   line-height: 1.6;
   color: rgb(82, 97, 62);
@@ -2463,7 +2463,7 @@ body {
 #HEADLINE7 > .ladi-headline,
 #HEADLINE9 > .ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
-  font-size: 13px;
+  font-size: 15.75px;
   line-height: 1.4;
   color: rgb(82, 97, 62);
   text-align: center;
@@ -3654,16 +3654,16 @@ body {
   margin-right: 10px;
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4789.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/Gemini_Generated_Image_wqcv5twqcv5twqcv.png");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4789.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/Gemini_Generated_Image_wqcv5twqcv5twqcv.png");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4494.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4789.jpg");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4494.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4789.jpg");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0277.jpg");
@@ -3672,10 +3672,10 @@ body {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0277.jpg");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0969.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/26_3.png");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_0969.jpg");
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/26_3.png");
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="4"] {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/TMN_1010.jpg");
@@ -3694,6 +3694,132 @@ body {
 }
 #GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
   background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4196.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4924.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="7"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4924.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="8"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4974.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="8"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/rung/XE3_4974.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1363.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="9"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1363.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="10"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1590.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="10"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1590.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1837.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="11"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1837.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1993.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="12"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_1993.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2020.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="13"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2020.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2198.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="14"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2198.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="15"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2227.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="15"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2227.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="16"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2285.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="16"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2285.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="17"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2343.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="17"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2343.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="18"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2361.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="18"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2361.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="19"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2390.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="19"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/TMN_2390.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="20"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5167.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="20"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5167.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="21"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5352.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="21"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5352.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="22"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5559.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="22"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5559.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="23"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5688.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="23"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5688.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="24"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5861.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="24"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5861.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="25"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5876.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="25"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5876.jpg");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="26"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5901.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="26"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5901.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-view-item[data-index="27"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5909.png");
+}
+#GALLERY2 .ladi-gallery .ladi-gallery-control-item[data-index="27"] {
+  background-image: url("https://khanhlee99.github.io/my-wedding/wedding_images/bien/XE3_5909.png");
 }
 #SECTION11 {
   height: 625.7px;
