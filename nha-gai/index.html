@@ -55,9 +55,17 @@
       rel="stylesheet"
       href="assets/css/fonts.css"
       as="style"
-      onload="this.onload = null; this.rel = &#39;stylesheet&#39;;"
+      onload="this.onload = null; this.rel = 'stylesheet';"
     />
     <link rel="preload" href="assets/js/ladipagev3.min.js" as="script" />
+    <style>
+      @supports (content-visibility: auto) {
+        .ladi-wraper > .ladi-section:not(:first-child) {
+          content-visibility: auto;
+          contain-intrinsic-size: 1px 1000px;
+        }
+      }
+    </style>
 
     <!-- MUSIC + SVG TOGGLE (iOS & Desktop friendly) -->
   </head>
@@ -101,9 +109,9 @@
       </svg>
     </div>
 
-    <script src="assets/js/music.js" type="text/javascript"></script>
+    <script src="assets/js/music.js" type="text/javascript" defer></script>
     <!-- PROTECT_COPY_START -->
-    <script src="assets/js/protect_copy.js" type="text/javascript"></script>
+    <script src="assets/js/protect_copy.js" type="text/javascript" defer></script>
 
     <!-- PROTECT_COPY_END -->
     <div class="ladi-wraper">
@@ -1159,12 +1167,8 @@
     <div id="backdrop-popup" class="backdrop-popup"></div>
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
-    <script src="assets/js/lazyload.js" type="text/javascript"></script>
-    <!--[if lt IE 9
-      ]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1769744263164"></script>
-      <script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1769744263164"></script
-    ><![endif]-->
-    <script src="assets/js/ladipagev3.min.js" type="text/javascript"></script>
+    <script src="assets/js/lazyload.js" type="text/javascript" defer></script>
+    <script src="assets/js/ladipagev3.min.js" type="text/javascript" defer></script>
     <script id="script_event_data" type="application/json">
       {
         "GROUP3": { "a": "group", "D": "fadeInUp", "A": "0.5s" },
@@ -1652,44 +1656,62 @@
         "GALLERY2": { "a": "gallery", "ah": true, "ae": 2 }
       }
     </script>
-    <script src="assets/js/ladipage_run.js" type="text/javascript"></script>
+    <script src="assets/js/ladipage_run.js" type="text/javascript" defer></script>
     <script
       type="text/javascript"
       defer=""
       src="assets/js/ladipage.formdata.min.js"
     ></script>
     <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
-      import {
-        getFirestore,
-        collection,
-        addDoc,
-        serverTimestamp,
-      } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
-      console.log("111");
-      const firebaseConfig = {
-        apiKey: "AIzaSyAFNXYxxWRm23dQhfpzrYgbBvxxY8OXffk",
-        authDomain: "my-wedding-a8459.firebaseapp.com",
-        projectId: "my-wedding-a8459",
-        storageBucket: "my-wedding-a8459.firebasestorage.app",
-        messagingSenderId: "762929240192",
-        appId: "1:762929240192:web:18ab5d8d4dde0bc6c82e65",
-        measurementId: "G-P8X8T3NNNY",
-      };
-
-      const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
-
       const form = document.querySelector("#FORM2 form");
-
       if (!form) {
         console.warn("FORM2 not found");
       } else {
+        let firebaseReadyPromise = null;
+
+        const initFirebase = async () => {
+          if (firebaseReadyPromise) return firebaseReadyPromise;
+          firebaseReadyPromise = (async () => {
+            const [{ initializeApp }, firestoreModule] = await Promise.all([
+              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js"),
+              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js"),
+            ]);
+            const { getFirestore, collection, addDoc, serverTimestamp } =
+              firestoreModule;
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyAFNXYxxWRm23dQhfpzrYgbBvxxY8OXffk",
+              authDomain: "my-wedding-a8459.firebaseapp.com",
+              projectId: "my-wedding-a8459",
+              storageBucket: "my-wedding-a8459.firebasestorage.app",
+              messagingSenderId: "762929240192",
+              appId: "1:762929240192:web:18ab5d8d4dde0bc6c82e65",
+              measurementId: "G-P8X8T3NNNY",
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            return { collection, addDoc, serverTimestamp, db };
+          })();
+          return firebaseReadyPromise;
+        };
+
+        const prewarm = () => {
+          initFirebase().catch((error) => {
+            console.error("Firebase preload failed:", error);
+          });
+        };
+
+        form.addEventListener("focusin", prewarm, { once: true });
+        form.addEventListener("pointerdown", prewarm, { once: true });
+
         form.addEventListener(
           "submit",
           async function () {
             const data = Object.fromEntries(new FormData(form).entries());
             try {
+              const { collection, addDoc, serverTimestamp, db } =
+                await initFirebase();
               await addDoc(collection(db, "rsvp_submissions"), {
                 name: data.name || "",
                 message: data.message || "",
@@ -1706,16 +1728,5 @@
         );
       }
     </script>
-    <div id="2fa-auth-scan-qr">
-      <template shadowrootmode="open"
-        ><div
-          class="2fa-auth-scan-qr__content"
-          id="2fa-auth-scan-qr__content"
-          data-v-app=""
-        >
-          <!---->
-        </div></template
-      >
-    </div>
   </body>
 </html>
