@@ -1847,7 +1847,6 @@ body {
 #BOX13 > .ladi-box,
 #BOX14 > .ladi-box,
 #BOX15 > .ladi-box,
-#BOX16 > .ladi-box,
 #BOX26 > .ladi-box,
 #BOX28 > .ladi-box,
 #BOX29 > .ladi-box,
@@ -1855,7 +1854,7 @@ body {
   border-radius: 0px;
 }
 #BOX1 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x1050/6322a62f2dad980013bb5005/515439888_657021200695055_8240166553133582057_n-20251024051544-wh4s-.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4454.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -1902,12 +1901,6 @@ body {
 #BOX14 > .ladi-box:hover,
 #HEADLINE64 > .ladi-headline:hover,
 #BOX15 > .ladi-box:hover,
-#HEADLINE66 > .ladi-headline:hover,
-#BOX16 > .ladi-box:hover,
-#BOX17 > .ladi-box:hover,
-#BOX22 > .ladi-box:hover,
-#BOX23 > .ladi-box:hover,
-#BOX25 > .ladi-box:hover,
 #HEADLINE67 > .ladi-headline:hover,
 #HEADLINE68 > .ladi-headline:hover,
 #HEADLINE69 > .ladi-headline:hover,
@@ -1971,7 +1964,6 @@ body {
 #HEADLINE56.ladi-animation > .ladi-headline,
 #HEADLINE64.ladi-animation > .ladi-headline,
 #HEADLINE63.ladi-animation > .ladi-headline,
-#HEADLINE66.ladi-animation > .ladi-headline,
 #GROUP52.ladi-animation > .ladi-group,
 #FORM2.ladi-animation > .ladi-form,
 #BUTTON3.ladi-animation > .ladi-button,
@@ -2025,17 +2017,14 @@ body {
 #HEADLINE60,
 #HEADLINE61,
 #BOX14,
-#IMAGE46 > .ladi-image > .ladi-image-background,
 #IMAGE45 > .ladi-image > .ladi-image-background,
 #IMAGE44 > .ladi-image > .ladi-image-background,
-#BOX25,
 #HEADLINE67,
 #HEADLINE69,
 #HEADLINE71,
 #HEADLINE73,
 #IMAGE47,
 #IMAGE47 > .ladi-image > .ladi-image-background,
-#IMAGE48 > .ladi-image > .ladi-image-background,
 #IMAGE52 > .ladi-image > .ladi-image-background,
 #IMAGE51,
 #IMAGE51 > .ladi-image > .ladi-image-background,
@@ -2155,7 +2144,6 @@ body {
 #IMAGE26 > .ladi-image > .ladi-image-background,
 #IMAGE40 > .ladi-image > .ladi-image-background,
 #IMAGE39 > .ladi-image > .ladi-image-background,
-#IMAGE46 > .ladi-image > .ladi-image-background,
 #IMAGE45 > .ladi-image > .ladi-image-background {
   background-image: url("https://w.ladicdn.com/s750x950/6322a62f2dad980013bb5005/icon-thiep-huyenpsd_0000_clear-white-plaster-texture-pattern-copy-14-20250703084107-2wpug.png");
 }
@@ -2197,7 +2185,6 @@ body {
 #BOX37 > .ladi-box,
 #BOX9 > .ladi-box,
 #BOX12 > .ladi-box,
-#BOX25 > .ladi-box,
 #POPUP1 > .ladi-popup > .ladi-popup-background,
 #POPUP3 > .ladi-popup > .ladi-popup-background {
   background-color: rgb(255, 255, 255);
@@ -2212,11 +2199,12 @@ body {
   left: 39px;
 }
 #BOX3 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s650x600/6322a62f2dad980013bb5005/515553699_657020624028446_6868433355289213046_n-20251024052219-sxkro.jpg");
-  background-size: cover;
+  background-image: url("../../../wedding_images/rung/XE3_4924.avif");
+  /* background-image: url("../../../wedding_images/bien/TMN_1837.avif"); */
+  background-size: 170%;
   background-origin: content-box;
-  background-position: 50% 50%;
-  background-repeat: repeat;
+  background-position: 51% 88%;
+  background-repeat: no-repeat;
   background-attachment: scroll;
 }
 #BOX3.ladi-animation > .ladi-box,
@@ -2396,10 +2384,10 @@ body {
   height: 293.5px;
 }
 #BOX6 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x600/6322a62f2dad980013bb5005/515440941_657017040695471_659125323574578618_n-20251024053721-5tx7e.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
   background-size: cover;
   background-origin: content-box;
-  background-position: 50% 0%;
+  background-position: 50% 58%;
   background-repeat: repeat;
   background-attachment: scroll;
 }
@@ -2737,11 +2725,11 @@ body {
   height: 511px;
 }
 #BOX7 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x850/6322a62f2dad980013bb5005/515437416_657021187361723_2033272597427685253_n-20251024052701-f6cnh.jpg");
-  background-size: cover;
+  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
+  background-size: 200%;
   background-origin: content-box;
-  background-position: 50% 0%;
-  background-repeat: repeat;
+  background-position: 50% 90%;
+  background-repeat: no-repeat;
   background-attachment: scroll;
 }
 #BOX8 {
@@ -2837,10 +2825,10 @@ body {
   left: 11.324px;
 }
 #BOX11 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s500x550/6322a62f2dad980013bb5005/518287201_657020710695104_3371959065957266543_n-20251024052943-0zfo5.jpg");
-  background-size: cover;
+  background-image: url("../../../wedding_images/bien/XE3_5778.jpg");
+  background-size: 250%;
   background-origin: content-box;
-  background-position: 50% 0%;
+  background-position: 70% 30%;
   background-repeat: repeat;
   background-attachment: scroll;
   transform: perspective(1000px) rotate(-9deg) rotateY(180deg);
@@ -2860,11 +2848,11 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 15px 9px -17px;
 }
 #BOX13 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s500x550/6322a62f2dad980013bb5005/518271244_657020784028430_9052010428472469074_n-20251024053123-b8w1d.jpg");
-  background-size: cover;
+  background-image: url("../../../wedding_images/bien/trang3.png");
+  background-size: 170%;
   background-origin: content-box;
-  background-position: 50% 0%;
-  background-repeat: repeat;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
   background-attachment: scroll;
   transform: perspective(1000px) rotate(9deg) rotateY(180deg);
 }
@@ -2998,7 +2986,7 @@ body {
   height: 631.3px;
 }
 #BOX14 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x950/6322a62f2dad980013bb5005/515437957_657018427361999_8240791255519918354_n-20251024053141-u7ktl.jpg");
+  background-image: url("../../../wedding_images/rung/TMN_0969.jpg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -3006,15 +2994,8 @@ body {
   background-attachment: scroll;
 }
 #SECTION8 {
-  height: 958.5px;
+  height: 520px;
 }
-#IMAGE46 {
-  width: 420px;
-  height: 368.2px;
-  top: 590.3px;
-  left: 0px;
-}
-#IMAGE46 > .ladi-image > .ladi-image-background,
 #IMAGE45 > .ladi-image > .ladi-image-background {
   width: 420px;
   height: 634.3px;
@@ -3025,16 +3006,14 @@ body {
   top: 1.8px;
   left: 0px;
 }
-#HEADLINE64,
-#HEADLINE66 {
+#HEADLINE64 {
   width: 289px;
 }
 #HEADLINE64 {
   top: 60.19px;
   left: 125px;
 }
-#HEADLINE64 > .ladi-headline,
-#HEADLINE66 > .ladi-headline {
+#HEADLINE64 > .ladi-headline {
   font-family: TESQSSRUdVTEFSLlRURg;
   font-size: 40.92px;
   line-height: 1.5;
@@ -3079,72 +3058,13 @@ body {
   left: 0px;
 }
 #BOX15 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s500x600/6322a62f2dad980013bb5005/515106387_657020314028477_728233260392817964_n-20251024053205-kguy3.jpg");
-  background-size: cover;
+  background-image: url("../../../wedding_images/rung/TMN_0853.jpg");
+  background-size: 160%;
   background-origin: content-box;
-  background-position: 50% 0%;
-  background-repeat: repeat;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   background-attachment: scroll;
 }
-#HEADLINE66 {
-  top: 563.19px;
-  left: 65.5px;
-}
-#BOX16 {
-  width: 213px;
-  height: 298px;
-  top: 660.5px;
-  left: 207px;
-}
-#BOX16 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s550x600/6322a62f2dad980013bb5005/518272375_657020330695142_3708422717415502576_n-20251024053205-qpgb8.jpg");
-  background-size: cover;
-  background-origin: content-box;
-  background-position: 50% 0%;
-  background-repeat: repeat;
-  background-attachment: scroll;
-}
-#GROUP65 {
-  width: 64.7px;
-  height: 210.7px;
-  top: 704.45px;
-  left: 69.6px;
-}
-#BOX17,
-#BOX22,
-#BOX23,
-#BOX25 {
-  width: 64.7px;
-  height: 64.7px;
-}
-#BOX17 {
-  top: 146px;
-  left: 0px;
-}
-#BOX17 > .ladi-box,
-#BOX22 > .ladi-box,
-#BOX23 > .ladi-box,
-#BOX25 > .ladi-box {
-  border-radius: 1000px;
-  box-shadow: rgb(0, 0, 0) 0px 15px 7px -15px;
-}
-#BOX17 > .ladi-box {
-  background-color: rgb(45, 48, 33);
-}
-#BOX17.ladi-animation > .ladi-box,
-#BOX22.ladi-animation > .ladi-box,
-#BOX23.ladi-animation > .ladi-box,
-#BOX25.ladi-animation > .ladi-box {
-  animation-name: fadeInLeft;
-  animation-delay: 0.5s;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-#BOX22 {
-  top: 99px;
-  left: 0px;
-}
-#BOX22 > .ladi-box,
 #FORM2
   .ladi-form
   [data-form-checkout-item="product"]
@@ -3178,13 +3098,6 @@ body {
 #BUTTON4 > .ladi-button > .ladi-button-background,
 #BOX36 > .ladi-box {
   background-color: rgb(14, 76, 5);
-}
-#BOX23 {
-  top: 48px;
-  left: 0px;
-}
-#BOX23 > .ladi-box {
-  background-color: rgb(255, 229, 253);
 }
 #GROUP43,
 #GROUP44,
@@ -3255,7 +3168,7 @@ body {
   width: 195px;
 }
 #SECTION9 {
-  height: 655.5px;
+  height: 150px;
 }
 #IMAGE47,
 #IMAGE47 > .ladi-image > .ladi-image-background,
@@ -3278,7 +3191,7 @@ body {
 }
 #HEADLINE75 {
   width: 262px;
-  top: 10px;
+  top: 0px;
   left: 0px;
 }
 #HEADLINE75 > .ladi-headline {
@@ -3292,7 +3205,7 @@ body {
 }
 #HEADLINE76 {
   width: 59px;
-  top: 0px;
+  top: -10px;
   left: 274.546px;
 }
 #HEADLINE76 > .ladi-headline {
@@ -3302,18 +3215,6 @@ body {
   color: rgb(14, 76, 5);
   letter-spacing: 0px;
   text-align: left;
-}
-#IMAGE48,
-#IMAGE48 > .ladi-image > .ladi-image-background {
-  width: 345.092px;
-  height: 414.11px;
-}
-#IMAGE48 {
-  top: 171.69px;
-  left: 37.454px;
-}
-#IMAGE48 > .ladi-image > .ladi-image-background {
-  background-image: url("https://w.ladicdn.com/s650x750/6322a62f2dad980013bb5005/thiep-dinh-tu_0002_518275102_1165849035586935_2829138683694900016_n-20250728115452-umybo-20251024053606-ctjfl.png");
 }
 #SECTION10 {
   height: 666.5px;
@@ -3349,64 +3250,94 @@ body {
   margin-right: 10px;
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/514315094_657020397361802_4580007072450081078_n-20251024053631-qxzfk.jpg");
+  background-image: url("../../../wedding_images/rung/26.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/514315094_657020397361802_4580007072450081078_n-20251024053631-qxzfk.jpg");
+  background-image: url("../../../wedding_images/rung/26.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/517150815_657018317362010_6629743913956380284_n-20251024053632-s9dly.jpg");
+  background-image: url("../../../wedding_images/rung/26_2.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/517150815_657018317362010_6629743913956380284_n-20251024053632-s9dly.jpg");
+  background-image: url("../../../wedding_images/rung/26_2.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/515437650_657020474028461_3401807543590915977_n-20251024053632-upxnk.jpg");
+  background-image: url("../../../wedding_images/rung/26_3.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="2"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/515437650_657020474028461_3401807543590915977_n-20251024053632-upxnk.jpg");
+  background-image: url("../../../wedding_images/rung/26_3.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/518272375_657020330695142_3708422717415502576_n-20251024053632-aevmh.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/518272375_657020330695142_3708422717415502576_n-20251024053632-aevmh.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="4"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/517028213_657020394028469_5588660054691026892_n-20251024053632-xc7ro.jpg");
+  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="4"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/517028213_657020394028469_5588660054691026892_n-20251024053632-xc7ro.jpg");
+  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="5"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/515670429_657018367362005_3350404433110043456_n-20251024053632-73are.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1363.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="5"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/515670429_657018367362005_3350404433110043456_n-20251024053632-73are.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1363.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/515441723_657018284028680_4406669036089524323_n-20251024053632-q3bwb.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1837.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/515441723_657018284028680_4406669036089524323_n-20251024053632-q3bwb.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1837.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/515439223_657020504028458_674752419544384730_n-20251024053632-is-ch.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1993.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="7"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/515439223_657020504028458_674752419544384730_n-20251024053632-is-ch.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1993.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="8"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/515436412_657018237362018_6126335323836824654_n-20251024053631-r-zxp.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_2020.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="8"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/515436412_657018237362018_6126335323836824654_n-20251024053631-r-zxp.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_2020.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
-  background-image: url("https://w.ladicdn.com/s750x1000/6322a62f2dad980013bb5005/518273488_657021067361735_6303619267417134477_n-20251024053631-vs3-a.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_2227.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="9"] {
-  background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/518273488_657021067361735_6303619267417134477_n-20251024053631-vs3-a.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_2227.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="10"] {
+  background-image: url("../../../wedding_images/bien/TMN_2285.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="10"] {
+  background-image: url("../../../wedding_images/bien/TMN_2285.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
+  background-image: url("../../../wedding_images/bien/TMN_2343.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="11"] {
+  background-image: url("../../../wedding_images/bien/TMN_2343.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
+  background-image: url("../../../wedding_images/bien/TMN_2361.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="12"] {
+  background-image: url("../../../wedding_images/bien/TMN_2361.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
+  background-image: url("../../../wedding_images/bien/XE3_5559.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="13"] {
+  background-image: url("../../../wedding_images/bien/XE3_5559.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
+  background-image: url("../../../wedding_images/bien/XE3_5688.avif");
+}
+#GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="14"] {
+  background-image: url("../../../wedding_images/bien/XE3_5688.avif");
 }
 #SECTION11 {
   height: 800.5px;
@@ -3728,10 +3659,10 @@ body {
   height: 338.5px;
 }
 #BOX26 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x650/6322a62f2dad980013bb5005/517006707_657017024028806_7781730135107118017_n-20251024053707-dvmrd.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4032.jpg");
   background-size: cover;
   background-origin: content-box;
-  background-position: 50% 100%;
+  background-position: 50% 40%;
   background-repeat: repeat;
   background-attachment: scroll;
 }
@@ -3931,7 +3862,7 @@ body {
   height: 265px;
 }
 #BOX33 > .ladi-box {
-  background-image: url("https://w.ladicdn.com/s750x600/6322a62f2dad980013bb5005/517006707_657017024028806_7781730135107118017_n-20251024053707-dvmrd.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1959.jpg");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 50%;
@@ -5935,7 +5866,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   padding: 0 16px;
   line-height: 1.5;
   background: rgba(32, 26, 25, 0.8);
-  // text-shadow: 0px 1px 4px black;
+  /* text-shadow: 0px 1px 4px black; */
   padding: 0 8px;
 
   lineheight: 1.2;
@@ -8932,11 +8863,11 @@ body {
 }
 
 #IMAGE70 > .ladi-image > .ladi-image-background {
-  background-image: url("../https://khanhlee99.github.io/my-wedding/QR/QR-Khanh.jpeg") !important;
+  background-image: url("../../../QR/QR-Khanh.jpeg") !important;
 }
 
 #IMAGE71 > .ladi-image > .ladi-image-background {
-  background-image: url("../https://khanhlee99.github.io/my-wedding/QR/QR-Trang.jpeg") !important;
+  background-image: url("../../../QR/QR-Trang.jpeg") !important;
 }
 
 /* ========== Narrow devices (<=440px), ho tro xuong ~360px ========== */
