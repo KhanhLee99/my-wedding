@@ -1797,6 +1797,12 @@ body {
   margin: 0 auto;
   width: 420px;
 }
+@supports (content-visibility: auto) {
+  .ladi-wraper > .ladi-section:not(:first-child):not(#SECTION_POPUP) {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
+  }
+}
 @font-face {
   font-family: "RkxBVklOREEuTRG";
   src: url("https://w.ladicdn.com/6322a62f2dad980013bb5005/flavinda-20250728035828-sfoob.otf");
@@ -1854,7 +1860,10 @@ body {
   border-radius: 0px;
 }
 #BOX1 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/XE3_4454.avif");
+  background-image: image-set(
+    url("../../../wedding_images/rung/XE3_4454.avif") type("image/avif"),
+    url("../../../wedding_images/rung/XE3_4454.webp") type("image/webp")
+  );
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
