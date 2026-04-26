@@ -1472,5 +1472,73 @@
       defer=""
       src="assets/js/ladipage.formdata.min.js"
     ></script>
+    <script type="module">
+      const form = document.querySelector("#FORM2 form");
+      if (!form) {
+        console.warn("FORM2 not found");
+      } else {
+        let firebaseReadyPromise = null;
+
+        const initFirebase = async () => {
+          if (firebaseReadyPromise) return firebaseReadyPromise;
+          firebaseReadyPromise = (async () => {
+            const [{ initializeApp }, firestoreModule] = await Promise.all([
+              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js"),
+              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js"),
+            ]);
+            const { getFirestore, collection, addDoc, serverTimestamp } =
+              firestoreModule;
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyAFNXYxxWRm23dQhfpzrYgbBvxxY8OXffk",
+              authDomain: "my-wedding-a8459.firebaseapp.com",
+              projectId: "my-wedding-a8459",
+              storageBucket: "my-wedding-a8459.firebasestorage.app",
+              messagingSenderId: "762929240192",
+              appId: "1:762929240192:web:18ab5d8d4dde0bc6c82e65",
+              measurementId: "G-P8X8T3NNNY",
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            return { collection, addDoc, serverTimestamp, db };
+          })();
+          return firebaseReadyPromise;
+        };
+
+        const prewarm = () => {
+          initFirebase().catch((error) => {
+            console.error("Firebase preload failed:", error);
+          });
+        };
+
+        form.addEventListener("focusin", prewarm, { once: true });
+        form.addEventListener("pointerdown", prewarm, { once: true });
+
+        form.addEventListener(
+          "submit",
+          async function () {
+            const data = Object.fromEntries(new FormData(form).entries());
+            try {
+              const { collection, addDoc, serverTimestamp, db } =
+                await initFirebase();
+              await addDoc(collection(db, "rsvp_submissions"), {
+                name: data.name || "",
+                message: data.message || "",
+                attendance: data.form_item7 || "",
+                guests_count: data.form_item8 || "",
+                guest_of: data.form_item9 || "",
+                submitted_at: serverTimestamp(),
+                submitted_at_client: new Date().toISOString(),
+                from: "nha-trai",
+              });
+            } catch (error) {
+              console.error("Save RSVP failed:", error);
+            }
+          },
+          true
+        );
+      }
+    </script>
   </body>
 </html>

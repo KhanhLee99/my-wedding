@@ -1726,6 +1726,7 @@
                 guests_count: data.guests_count || "",
                 submitted_at: serverTimestamp(),
                 submitted_at_client: new Date().toISOString(),
+                from: "nha-gai",
               });
             } catch (error) {
               console.error("Save RSVP failed:", error);

@@ -97,7 +97,7 @@
       <h1>RSVP Submissions</h1>
       <div class="meta" id="status">Dang tai du lieu...</div>
       <div class="toolbar">
-        <input id="search" type="search" placeholder="Tim theo ten / loi nhan / trang thai..." />
+        <input id="search" type="search" placeholder="Tim theo ten / loi nhan / trang thai / nguon..." />
         <button id="reloadBtn">Tai lai</button>
         <button id="csvBtn" class="secondary">Tai CSV</button>
       </div>
@@ -109,6 +109,7 @@
               <th>Trang thai</th>
               <th>So nguoi</th>
               <th>Loi nhan</th>
+              <th>From</th>
               <th>Thoi gian</th>
             </tr>
           </thead>
@@ -167,7 +168,7 @@
       }
 
       function downloadCsv(rows) {
-        const headers = ["doc_id", "name", "attendance", "guests_count", "message", "submitted_at", "submitted_at_client"];
+        const headers = ["doc_id", "name", "attendance", "guests_count", "message", "from", "submitted_at", "submitted_at_client"];
         const lines = [headers.join(",")];
         rows.forEach((r) => {
           const row = [
@@ -176,6 +177,7 @@
             r.attendance || "",
             r.guests_count || "",
             r.message || "",
+            r.from || "",
             formatTime(r),
             r.submitted_at_client || "",
           ];
@@ -205,6 +207,7 @@
             <td>${row.attendance || ""}</td>
             <td>${row.guests_count || ""}</td>
             <td>${row.message || ""}</td>
+            <td>${row.from || ""}</td>
             <td>${formatTime(row)}</td>
           `;
           tbody.appendChild(tr);
@@ -219,7 +222,7 @@
           return;
         }
         const filtered = allRows.filter((r) =>
-          [r.name, r.message, r.attendance, r.guests_count, r.id].join(" ").toLowerCase().includes(keyword)
+          [r.name, r.message, r.attendance, r.guests_count, r.from, r.id].join(" ").toLowerCase().includes(keyword)
         );
         renderTable(filtered);
         statusEl.textContent = `Hien thi ${filtered.length}/${allRows.length} phan hoi`;
