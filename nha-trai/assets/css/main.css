@@ -2209,7 +2209,6 @@ body {
 }
 #BOX3 > .ladi-box {
   background-image: url("../../../wedding_images/rung/XE3_4924.avif");
-  /* background-image: url("../../../wedding_images/bien/TMN_1837.avif"); */
   background-size: 170%;
   background-origin: content-box;
   background-position: 51% 88%;
@@ -2834,7 +2833,7 @@ body {
   left: 11.324px;
 }
 #BOX11 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/XE3_5778.jpg");
+  background-image: url("../../../wedding_images/bien/XE3_5778.avif");
   background-size: 250%;
   background-origin: content-box;
   background-position: 70% 30%;
@@ -2857,7 +2856,7 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 15px 9px -17px;
 }
 #BOX13 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/trang3.png");
+  background-image: url("../../../wedding_images/bien/trang3.avif");
   background-size: 170%;
   background-origin: content-box;
   background-position: 50% 40%;
@@ -2995,7 +2994,7 @@ body {
   height: 631.3px;
 }
 #BOX14 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/TMN_0969.jpg");
+  background-image: url("../../../wedding_images/rung/TMN_0969.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -3067,7 +3066,7 @@ body {
   left: 0px;
 }
 #BOX15 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/TMN_0853.jpg");
+  background-image: url("../../../wedding_images/rung/TMN_0853.avif");
   background-size: 160%;
   background-origin: content-box;
   background-position: 50% 100%;
@@ -3668,7 +3667,7 @@ body {
   height: 338.5px;
 }
 #BOX26 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/XE3_4032.jpg");
+  background-image: url("../../../wedding_images/rung/XE3_4032.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 40%;
@@ -3871,7 +3870,7 @@ body {
   height: 265px;
 }
 #BOX33 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/TMN_1959.jpg");
+  background-image: url("../../../wedding_images/bien/TMN_1959.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 50%;
