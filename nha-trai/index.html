@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0033)https://jmiiwedding.com/hoanglyy/ -->
 <html lang="vi" class="mdl-js">
   <head>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
@@ -16,8 +15,14 @@
       name="viewport"
       content="width=420,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"
     />
-    <link rel="canonical" href="https://jmiiwedding.com/hoanglyy" />
-    <meta property="og:url" content="https://jmiiwedding.com/hoanglyy" />
+    <link
+      rel="canonical"
+      href="https://khanhlee99.github.io/my-wedding/nha-trai/"
+    />
+    <meta
+      property="og:url"
+      content="https://khanhlee99.github.io/my-wedding/nha-trai/"
+    />
     <meta property="og:title" content="Viết Khánh &amp; Huyền Trang Wedding" />
     <meta property="og:type" content="website" />
     <meta
@@ -1483,8 +1488,12 @@
           if (firebaseReadyPromise) return firebaseReadyPromise;
           firebaseReadyPromise = (async () => {
             const [{ initializeApp }, firestoreModule] = await Promise.all([
-              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js"),
-              import("https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js"),
+              import(
+                "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js"
+              ),
+              import(
+                "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js"
+              ),
             ]);
             const { getFirestore, collection, addDoc, serverTimestamp } =
               firestoreModule;
