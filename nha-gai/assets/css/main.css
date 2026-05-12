@@ -2422,7 +2422,7 @@ body {
 }
 #HEADLINE5 {
   width: 335px;
-  top: 90.1px;
+  top: 125.1px;
   left: 31.75px;
 }
 #HEADLINE5 > .ladi-headline {
@@ -2477,6 +2477,12 @@ body {
   line-height: 1.4;
   color: rgb(82, 97, 62);
   text-align: center;
+}
+#HEADLINE7 > .ladi-headline em,
+#HEADLINE9 > .ladi-headline em {
+  font-style: italic;
+  margin-top: 5px;
+  display: block;
 }
 #GROUP12 {
   width: 206px;
