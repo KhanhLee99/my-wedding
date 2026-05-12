@@ -2487,6 +2487,12 @@ body {
   color: rgb(14, 76, 5);
   text-align: center;
 }
+#HEADLINE21 > .ladi-headline em,
+#HEADLINE23 > .ladi-headline em {
+  font-style: italic;
+  margin-top: 5px;
+  display: block;
+}
 #GROUP13 {
   top: 2.9px;
   left: 206px;
