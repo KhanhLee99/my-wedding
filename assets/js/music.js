@@ -1,17 +1,28 @@
-const musicList = ["../musics/bai27.mp3"];
+const MUSIC_FILE = "bai27.mp3";
+const musicList = [
+  new URL(`musics/${MUSIC_FILE}`, window.location.href).href,
+];
 
 let index = 0;
 let audio = new Audio(musicList[index]);
 audio.loop = false;
+audio.preload = "auto";
 
 let musicStarted = false;
 let isPlaying = false;
 
-const toggleBtn = document.getElementById("music-toggle");
-const iconOn = document.getElementById("icon-on");
-const iconOff = document.getElementById("icon-off");
+function getToggleElements() {
+  return {
+    toggleBtn: document.getElementById("music-toggle"),
+    iconOn: document.getElementById("icon-on"),
+    iconOff: document.getElementById("icon-off"),
+  };
+}
 
 function updateIcon() {
+  const { toggleBtn, iconOn, iconOff } = getToggleElements();
+  if (!toggleBtn || !iconOn || !iconOff) return;
+
   if (isPlaying) {
     iconOn.style.display = "block";
     iconOff.style.display = "none";
@@ -32,7 +43,7 @@ function safePlay() {
     musicStarted = true;
     isPlaying = true;
     updateIcon();
-  }).catch(err => {
+  }).catch((err) => {
     console.debug("Audio play blocked or failed:", err);
     throw err;
   });
@@ -44,7 +55,26 @@ function pauseMusic() {
   updateIcon();
 }
 
-audio.addEventListener("ended", function() {
+function toggleMusic() {
+  if (!musicStarted) {
+    safePlay().catch(() => {
+      isPlaying = false;
+      updateIcon();
+    });
+    return;
+  }
+
+  if (isPlaying) {
+    pauseMusic();
+  } else {
+    safePlay().catch(() => {
+      isPlaying = false;
+      updateIcon();
+    });
+  }
+}
+
+audio.addEventListener("ended", function () {
   index = (index + 1) % musicList.length;
   audio.src = musicList[index];
   audio.play().then(() => {
@@ -56,44 +86,52 @@ audio.addEventListener("ended", function() {
   });
 });
 
-// -------------------
-// Start music on first gesture (iOS + Desktop)
-// -------------------
 function startMusicOnFirstGesture() {
   if (musicStarted) return;
   safePlay().catch(() => {});
 }
 
-// iOS
-document.addEventListener("touchstart", startMusicOnFirstGesture, { once: true, passive: true });
-// Desktop
-document.addEventListener("mousedown", startMusicOnFirstGesture, { once: true });
-document.addEventListener("wheel", startMusicOnFirstGesture, { once: true });
-
-// -------------------
-// Toggle button
-// -------------------
-toggleBtn.addEventListener("click", function (ev) {
-  ev.preventDefault();
-
-  if (!musicStarted) {
-    safePlay().catch(() => { isPlaying = false; updateIcon(); });
+function initMusicToggle() {
+  const { toggleBtn } = getToggleElements();
+  if (!toggleBtn) {
+    console.warn("music-toggle not found");
     return;
   }
 
-  if (isPlaying) {
-    pauseMusic();
-  } else {
-    safePlay().catch(() => { isPlaying = false; updateIcon(); });
-  }
-});
+  isPlaying = false;
+  updateIcon();
 
-isPlaying = false;
-updateIcon();
+  toggleBtn.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    toggleMusic();
+  });
 
-toggleBtn.addEventListener("keydown", function(e){
-  if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault();
-    toggleBtn.click();
-  }
+  toggleBtn.addEventListener(
+    "pointerdown",
+    function (ev) {
+      ev.stopPropagation();
+    },
+    { passive: true }
+  );
+
+  toggleBtn.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleMusic();
+    }
+  });
+}
+
+document.addEventListener("touchstart", startMusicOnFirstGesture, {
+  once: true,
+  passive: true,
 });
+document.addEventListener("mousedown", startMusicOnFirstGesture, { once: true });
+document.addEventListener("wheel", startMusicOnFirstGesture, { once: true });
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initMusicToggle);
+} else {
+  initMusicToggle();
+}

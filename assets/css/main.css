@@ -3979,7 +3979,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
+  z-index: 90000100;
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   transition: transform 0.18s ease, box-shadow 0.18s ease;

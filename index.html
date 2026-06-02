@@ -93,47 +93,6 @@
     <!-- MUSIC + SVG TOGGLE (iOS & Desktop friendly) -->
   </head>
   <body class="">
-    <div
-      id="music-toggle"
-      role="button"
-      aria-label="Bật/tắt nhạc"
-      title="Tắt nhạc"
-      aria-pressed="true"
-      class="playing"
-    >
-      <!-- SOUND ON (waves) -->
-      <svg
-        id="icon-on"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#2b2b2b"
-        stroke-width="1.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        style="display: block"
-      >
-        <polygon points="3 9 7 9 11 5 11 19 7 15 3 15"></polygon>
-        <path d="M14 9.5a3 3 0 0 1 0 5"></path>
-        <path d="M16.5 7a6 6 0 0 1 0 10"></path>
-      </svg>
-      <!-- SOUND OFF (muted) -->
-      <svg
-        id="icon-off"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#2b2b2b"
-        stroke-width="1.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        style="display: none"
-      >
-        <polygon points="3 9 7 9 11 5 11 19 7 15 3 15"></polygon>
-        <line x1="16" y1="8" x2="21" y2="13"></line>
-        <line x1="21" y1="8" x2="16" y2="13"></line>
-      </svg>
-    </div>
-
-    <script src="assets/js/music.js" type="text/javascript" defer></script>
     <!-- PROTECT_COPY_START -->
     <script
       src="assets/js/protect_copy.js"
@@ -1045,7 +1004,6 @@
                 </div>
               </div>
             </div>
-            <div class="popup-close"></div>
           </div>
         </div>
       </div>
@@ -1053,6 +1011,44 @@
     <div id="backdrop-popup" class="backdrop-popup"></div>
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
+    <div
+      id="music-toggle"
+      role="button"
+      aria-label="Bật/tắt nhạc"
+      title="Bật nhạc"
+      aria-pressed="false"
+      tabindex="0"
+    >
+      <svg
+        id="icon-on"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#2b2b2b"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="display: none"
+      >
+        <polygon points="3 9 7 9 11 5 11 19 7 15 3 15"></polygon>
+        <path d="M14 9.5a3 3 0 0 1 0 5"></path>
+        <path d="M16.5 7a6 6 0 0 1 0 10"></path>
+      </svg>
+      <svg
+        id="icon-off"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#2b2b2b"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="display: block"
+      >
+        <polygon points="3 9 7 9 11 5 11 19 7 15 3 15"></polygon>
+        <line x1="16" y1="8" x2="21" y2="13"></line>
+        <line x1="21" y1="8" x2="16" y2="13"></line>
+      </svg>
+    </div>
+    <script src="assets/js/music.js" type="text/javascript" defer></script>
     <script src="assets/js/lazyload.js" type="text/javascript" defer></script>
     <!--[if lt IE 9
       ]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1766572470135"></script>
