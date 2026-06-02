@@ -1861,8 +1861,8 @@ body {
 }
 #BOX1 > .ladi-box {
   background-image: image-set(
-    url("../../../wedding_images/rung/XE3_4454.avif") type("image/avif"),
-    url("../../../wedding_images/rung/XE3_4454.webp") type("image/webp")
+    url("../../wedding_images/rung/XE3_4454.avif") type("image/avif"),
+    url("../../wedding_images/rung/XE3_4454.webp") type("image/webp")
   );
   background-size: cover;
   background-origin: content-box;
@@ -2208,7 +2208,7 @@ body {
   left: 39px;
 }
 #BOX3 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/XE3_4924.avif");
+  background-image: url("../../wedding_images/rung/XE3_4924.avif");
   background-size: 170%;
   background-origin: content-box;
   background-position: 51% 88%;
@@ -2392,7 +2392,7 @@ body {
   height: 293.5px;
 }
 #BOX6 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
+  background-image: url("../../wedding_images/rung/XE3_4301.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 58%;
@@ -2739,7 +2739,7 @@ body {
   height: 511px;
 }
 #BOX7 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
+  background-image: url("../../wedding_images/rung/TMN_1010.avif");
   background-size: 200%;
   background-origin: content-box;
   background-position: 50% 90%;
@@ -2839,7 +2839,7 @@ body {
   left: 11.324px;
 }
 #BOX11 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/XE3_5778.avif");
+  background-image: url("../../wedding_images/bien/XE3_5778.avif");
   background-size: 250%;
   background-origin: content-box;
   background-position: 70% 30%;
@@ -2862,7 +2862,7 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 15px 9px -17px;
 }
 #BOX13 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/trang3.avif");
+  background-image: url("../../wedding_images/bien/trang3.avif");
   background-size: 170%;
   background-origin: content-box;
   background-position: 50% 40%;
@@ -3000,7 +3000,7 @@ body {
   height: 631.3px;
 }
 #BOX14 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/TMN_0969.avif");
+  background-image: url("../../wedding_images/rung/TMN_0969.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -3072,7 +3072,7 @@ body {
   left: 0px;
 }
 #BOX15 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/TMN_0853.avif");
+  background-image: url("../../wedding_images/rung/TMN_0853.avif");
   background-size: 160%;
   background-origin: content-box;
   background-position: 50% 100%;
@@ -3264,94 +3264,94 @@ body {
   margin-right: 10px;
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-  background-image: url("../../../wedding_images/rung/26.avif");
+  background-image: url("../../wedding_images/rung/26.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-  background-image: url("../../../wedding_images/rung/26.avif");
+  background-image: url("../../wedding_images/rung/26.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-  background-image: url("../../../wedding_images/rung/26_2.avif");
+  background-image: url("../../wedding_images/rung/26_2.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-  background-image: url("../../../wedding_images/rung/26_2.avif");
+  background-image: url("../../wedding_images/rung/26_2.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-  background-image: url("../../../wedding_images/rung/26_3.avif");
+  background-image: url("../../wedding_images/rung/26_3.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="2"] {
-  background-image: url("../../../wedding_images/rung/26_3.avif");
+  background-image: url("../../wedding_images/rung/26_3.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
+  background-image: url("../../wedding_images/rung/XE3_4301.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-  background-image: url("../../../wedding_images/rung/XE3_4301.avif");
+  background-image: url("../../wedding_images/rung/XE3_4301.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="4"] {
-  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
+  background-image: url("../../wedding_images/rung/TMN_1010.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="4"] {
-  background-image: url("../../../wedding_images/rung/TMN_1010.avif");
+  background-image: url("../../wedding_images/rung/TMN_1010.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="5"] {
-  background-image: url("../../../wedding_images/bien/TMN_1363.avif");
+  background-image: url("../../wedding_images/bien/TMN_1363.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="5"] {
-  background-image: url("../../../wedding_images/bien/TMN_1363.avif");
+  background-image: url("../../wedding_images/bien/TMN_1363.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
-  background-image: url("../../../wedding_images/bien/TMN_1837.avif");
+  background-image: url("../../wedding_images/bien/TMN_1837.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
-  background-image: url("../../../wedding_images/bien/TMN_1837.avif");
+  background-image: url("../../wedding_images/bien/TMN_1837.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
-  background-image: url("../../../wedding_images/bien/TMN_1993.avif");
+  background-image: url("../../wedding_images/bien/TMN_1993.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="7"] {
-  background-image: url("../../../wedding_images/bien/TMN_1993.avif");
+  background-image: url("../../wedding_images/bien/TMN_1993.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="8"] {
-  background-image: url("../../../wedding_images/bien/TMN_2020.avif");
+  background-image: url("../../wedding_images/bien/TMN_2020.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="8"] {
-  background-image: url("../../../wedding_images/bien/TMN_2020.avif");
+  background-image: url("../../wedding_images/bien/TMN_2020.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
-  background-image: url("../../../wedding_images/bien/TMN_2227.avif");
+  background-image: url("../../wedding_images/bien/TMN_2227.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="9"] {
-  background-image: url("../../../wedding_images/bien/TMN_2227.avif");
+  background-image: url("../../wedding_images/bien/TMN_2227.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="10"] {
-  background-image: url("../../../wedding_images/bien/TMN_2285.avif");
+  background-image: url("../../wedding_images/bien/TMN_2285.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="10"] {
-  background-image: url("../../../wedding_images/bien/TMN_2285.avif");
+  background-image: url("../../wedding_images/bien/TMN_2285.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
-  background-image: url("../../../wedding_images/bien/TMN_2343.avif");
+  background-image: url("../../wedding_images/bien/TMN_2343.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="11"] {
-  background-image: url("../../../wedding_images/bien/TMN_2343.avif");
+  background-image: url("../../wedding_images/bien/TMN_2343.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
-  background-image: url("../../../wedding_images/bien/TMN_2361.avif");
+  background-image: url("../../wedding_images/bien/TMN_2361.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="12"] {
-  background-image: url("../../../wedding_images/bien/TMN_2361.avif");
+  background-image: url("../../wedding_images/bien/TMN_2361.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
-  background-image: url("../../../wedding_images/bien/XE3_5559.avif");
+  background-image: url("../../wedding_images/bien/XE3_5559.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="13"] {
-  background-image: url("../../../wedding_images/bien/XE3_5559.avif");
+  background-image: url("../../wedding_images/bien/XE3_5559.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
-  background-image: url("../../../wedding_images/bien/XE3_5688.avif");
+  background-image: url("../../wedding_images/bien/XE3_5688.avif");
 }
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="14"] {
-  background-image: url("../../../wedding_images/bien/XE3_5688.avif");
+  background-image: url("../../wedding_images/bien/XE3_5688.avif");
 }
 #SECTION11 {
   height: 800.5px;
@@ -3673,7 +3673,7 @@ body {
   height: 338.5px;
 }
 #BOX26 > .ladi-box {
-  background-image: url("../../../wedding_images/rung/XE3_4032.avif");
+  background-image: url("../../wedding_images/rung/XE3_4032.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 40%;
@@ -3788,7 +3788,7 @@ body {
   left: 31.368px;
 }
 #BOX29 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/TMN_1837.avif");
+  background-image: url("../../wedding_images/bien/TMN_1837.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 50%;
@@ -3876,7 +3876,7 @@ body {
   height: 265px;
 }
 #BOX33 > .ladi-box {
-  background-image: url("../../../wedding_images/bien/TMN_1959.avif");
+  background-image: url("../../wedding_images/bien/TMN_1959.avif");
   background-size: cover;
   background-origin: content-box;
   background-position: 50% 50%;
@@ -8877,11 +8877,11 @@ body {
 }
 
 #IMAGE70 > .ladi-image > .ladi-image-background {
-  background-image: url("../../../QR/QR-Khanh.jpeg") !important;
+  background-image: url("../../QR/QR-Khanh.jpeg") !important;
 }
 
 #IMAGE71 > .ladi-image > .ladi-image-background {
-  background-image: url("../../../QR/QR-Trang.jpeg") !important;
+  background-image: url("../../QR/QR-Trang.jpeg") !important;
 }
 
 /* ========== Narrow devices (<=440px), ho tro xuong ~360px ========== */
